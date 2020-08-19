@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 { font-size: 32px; }
+
+/* links */
+a {
+    background-color: #DCDCDC;
+    color: #008CBC;
+    text-decoration: none;
+}
+
+nav a,
+#Reference a {
+    background-color: initial;
+}
+
+nav a:link {
+    color: #FFFFFF;
+}
+
+nav a:visited {
+    color: #2F2F2F;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section a:visited {
+    color: #000000;
+}
+
+#Reference a {
+    color: #008CBC;
+}
+
+/* nav */
+nav {
+    background: #000000;
+    color: #FFFFFF;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+
+nav header {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav ul {
+    background-color: #cccccc;
+    list-style: none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+
+nav li {
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    padding: 20px 0 5px 20px;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+ul:last-child {
+    padding-bottom: 5px;
+}
+
+/* main */
+main {
+    padding: 0 20px 20px;
+}
+
+pre {
+    border-left: 3px solid #7b7b7b;
+}
+
+dd {
+    margin-bottom: 6px;
+}
+
+dt {
+    margin-bottom: 2px;
+}
+
+@media (min-width: 815px) {
+    nav {
+        height: 100%;
+        position: fixed;
+        width: 300px;
+    }
+    nav ul {
+        height: 100%;
+        overflow-y: auto;
+    }
+    main {
+        left: 300px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-left: 20px;
+    }
+}
